@@ -12,7 +12,13 @@ if(isset( $_POST['nombre'])){
     $correo=$_POST['correo'];
     $estado=$_POST['estado'];
 
-    
+    echo "nombre: ".$nombre;
+    echo "<br>apellido: ".$apellido;
+    echo "<br>ciudad: ".$ciudad;
+    echo "<br>edad ".$edad;
+    echo "<br>telefono: ".$telefono;
+    echo "<br>correo: ".$correo;
+    echo "<br>estado civil: ".$estado;
 }
 ?>
 
@@ -70,22 +76,5 @@ if(isset( $_POST['nombre'])){
         <button type="submit" >Registrar</button>
         </form>
 
-        <?php if($enviado){ ?>
-    <hr>
-
-    <h2><? 
-    
-    echo "nombre: ".$nombre;
-    echo "<br>apellido: ".$apellido;
-    echo "<br>ciudad: ".$ciudad;
-    echo "<br>edad ".$edad;
-    echo "<br>telefono: ".$telefono;
-    echo "<br>correo: ".$correo;
-    echo "<br>estado civil: ".$estado;
-    
-    ?>  </h2>
-    
-
-    <?php } ?>
 </body>
 </html>
